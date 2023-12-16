@@ -17,6 +17,11 @@ services:
     generateValue: true
   - key: MINIO_BROWSER
     value: "off"
+  - key: MINIO_CORS_ENABLED
+    value: "on"
+  - key: MINIO_CORS_ALLOW_ORIGIN
+    value: "*"
+  # Add more CORS configuration options if needed
 - type: web
   name: minio-console
   runtime: image
